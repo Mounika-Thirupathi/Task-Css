@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .parent>h1,h2,h5{
+        background-color: blue;
+    }
+    .parent h1,h2,h3,h4,h5{
+        color:brown;
+    }
+    .parent-sub>h3,h4{
+        font-style:italic ;
+    }
+    .parent>.parent-sub>h3,h4{
+        font-style: italic;
+    } */
+    
+    /* .parent>h1+h2{
+        color:yellow;
+    } */
+     .parent>h1~p{
+        color:aqua;
+     }
+</style>
+<body>
+    <h1>Combinator Selector</h1>
+    <ul>
+        <li>child(>)</li>
+        <li>desendant(space)</li>
+        <li>adjacent(+)</li>
+        <li>general(~)</li>
+    </ul>
+     <div class="parent">
+        <h1>child1</h1>
+        <p>child2<p>
+        <div class="parent-sub">
+            <h3>child3</h3>
+            <h4>child4</h4>
+        </div>
+        <h5>child5</h5>
+         <p>child6</p>
+     </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cartoon{
+        background-color: yellow;
+        color:aqua;
+    }
+
+    #car{
+        color: azure;
+        background-color: blueviolet;
+        
+    }
+    h2{
+        color:aliceblue;
+        background-color:blue;
+    }
+    .network{
+        font-size: 2rem;
+        background-color: aqua;
+    }
+    #cn{
+        font-size: 5rem;
+        background-color: brown;
+    }
+    .bike{
+        font-style: normal;
+    }
+
+    #bk{
+       font-style:italic ;
+    }
+    #bk,#cn,#car,.cartoon,.network,.bike,h2{
+        text-decoration: underline;
+    }
+     *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/027/515/481/non_2x/3d-cartoon-of-cute-boy-kid-photo.jpg");
+        background-repeat:no-repeat;
+        background-size: contain;
+        background-size: cover;
+     }
+    
+</style>
+<body>
+    <h1>SIMPLE SELECTORS:1.class selector</h1>
+    <p class="cartoon">Ben10</p>
+    <p class="cartoon">Pokemon</p>
+    <p class="cartoon">mitty raju</p>
+    <p class="cartoon">shinchan</p>
+    <p class="cartoon">oogy and cockroach</p>
+    <p class="cartoon">mootu pathulu</p>
+    
+    <h1>2.id selector</h1>
+    <h3 id="car">Benze</h3>
+    <h3 id="car">BMW</h3>
+    <h3 id="car">Ferari</h3>
+    <h3 id="car">suzuki</h3>
+    <h3 id="car">swift</h3>
+    
+    <h1>3.element selector</h1>
+    <h2>Apple</h2>
+    <h2>Banana</h2>
+    <h2>mango</h2>
+    <h2>grapes</h2>
+    <h2>blue berry</h2>
+
+    <h1>Priority</h1>
+    <ul>
+        <li>id</li>
+        <li>class</li>
+        <li>element</li>
+    </ul>
+    <p>when class and id are given in same tag priority is id</p>
+    <h4 class="network" id="cn">Mounika</h4>
+    
+    <h1>important keyword</h1>
+    <p>using important keyword we can change priority</p>
+    <h5 class="bike" id="bk">pulsar</h5>
+
+    <h1>Grouping</h1>
+    <p>when we want to apply same styling for different elements</p>
+
+</body>
+</html>
